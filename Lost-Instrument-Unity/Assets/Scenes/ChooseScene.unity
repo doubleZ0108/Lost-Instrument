@@ -5756,9 +5756,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveRate: 30
-  movingOut: 0
+  rotateRate: 100
   move: 0
+  rotateIn: 0
+  rotateOut: 0
   distanceMax: 500
+  angleMax: 180
   direction: {x: 0, y: 0, z: 0}
 --- !u!1 &963194225
 GameObject:
@@ -6162,7 +6165,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 5c28c2730269f4000aa431d3f8bcb8f3,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.7
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 5c28c2730269f4000aa431d3f8bcb8f3,
         type: 3}
@@ -11746,9 +11749,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveRate: 30
-  movingOut: 0
+  rotateRate: 200
   move: 0
+  rotateIn: 0
+  rotateOut: 0
   distanceMax: 500
+  angleMax: 180
   direction: {x: 0, y: 0, z: 0}
 --- !u!1 &1705358938
 GameObject:
@@ -12101,9 +12107,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveRate: 30
-  movingOut: 0
+  rotateRate: 100
   move: 0
+  rotateIn: 0
+  rotateOut: 0
   distanceMax: 500
+  angleMax: 180
   direction: {x: 0, y: 0, z: 0}
 --- !u!4 &1917199570 stripped
 Transform:
@@ -12528,9 +12537,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveRate: 30
-  movingOut: 0
+  rotateRate: 100
   move: 0
+  rotateIn: 0
+  rotateOut: 0
   distanceMax: 10
+  angleMax: 180
   direction: {x: 0, y: 0, z: 0}
 --- !u!1 &2066056041
 GameObject:

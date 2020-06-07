@@ -181,6 +181,9 @@ public class TouchMovement : MonoBehaviour
     {
         isWatching = false;
         // 进行三个物体，和相机、UI 的移回操作
+        GameObject aimOne = (GameObject)objects[position];
+        aimOne.GetComponent<WatchMove>().rotateBack();
+
         GameObject rightOne = (GameObject)objects[(position + 1) % 4];
         rightOne.GetComponent<WatchMove>().moving(Vector3.left);
         GameObject backOne = (GameObject)objects[(position + 2) % 4];
@@ -199,6 +202,9 @@ public class TouchMovement : MonoBehaviour
         // 进行四个物体的移动操作
         // 三个物体的移出相机范围，相机和ui前移
         Debug.Log("isWatching! position=" + position);
+        GameObject aimOne = (GameObject)objects[position];
+        aimOne.GetComponent<WatchMove>().rotate();
+
         GameObject rightOne = (GameObject)objects[(position + 1) % 4];
         rightOne.GetComponent<WatchMove>().moving(Vector3.right);
         //rightOne.transform.Translate(Vector3.right * moveRate * Time.deltaTime);

@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class WatchMove : MonoBehaviour
 {
-    public int moveRate = 30;
-    public bool movingOut = false;
+    public int moveRate = 50;
+    public int rotateRate = 100;
+    //public bool movingOut = false;
     public bool move = false;
+    public bool rotateIn = false;
+    public bool rotateOut = false;
 
     public float distanceMax = 10f;
+    public float angleMax = 180f;
     private float distance = 0f;
+    private float angle = 0f;
 
     public Vector3 direction;
 
@@ -18,6 +23,7 @@ public class WatchMove : MonoBehaviour
     {
         distance = 0;
         distanceMax = 10;
+        angle = 0f;
     }
 
     // Update is called once per frame
@@ -50,8 +56,32 @@ public class WatchMove : MonoBehaviour
             //}
             
         }
-        
-        
+        if (rotateIn)
+        {
+            transform.Rotate(Vector3.up, rotateRate * Time.deltaTime, Space.Self);
+            angle += Mathf.Abs(rotateRate * Time.deltaTime);
+            //Debug.Log("angle=" + angle.ToString());
+            //Debug.Log(angle >= angleMax);
+            if (angle >= angleMax)
+            {
+                Debug.Log("STOP!!");
+                transform.Rotate(Vector3.down, angle - angleMax, Space.Self);
+                rotateIn = false;
+                angle = 0;
+            }
+        }
+        if (rotateOut)
+        {
+            transform.Rotate(Vector3.down, rotateRate * Time.deltaTime, Space.Self);
+            angle += Mathf.Abs(rotateRate * Time.deltaTime);
+            if (angle >= angleMax)
+            {
+                transform.Rotate(Vector3.up, angle - angleMax, Space.Self);
+                rotateOut = false;
+                angle = 0;
+            }
+        }
+
     }
 
     //public void moveOut(Vector3 direction)
@@ -71,5 +101,14 @@ public class WatchMove : MonoBehaviour
         this.direction = direction;
         move = true;
         //movingOut = false;
+    }
+
+    public void rotate()
+    {
+        rotateIn = true;
+    }
+    public void rotateBack()
+    {
+        rotateOut = true;
     }
 }
