@@ -60,8 +60,9 @@ crashlytics-build.properties
 
 .DS_Store
 
-# Unity Models
-Models/
-Models.meta
 Library/
 Logs/
+Temp/
+
+Models/
+Models.meta
