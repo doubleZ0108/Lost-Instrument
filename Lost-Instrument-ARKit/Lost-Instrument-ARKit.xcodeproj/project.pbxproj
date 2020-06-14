@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC0EE9732495256D001B600A /* eh.dae in Resources */ = {isa = PBXBuildFile; fileRef = EC0EE9722495256D001B600A /* eh.dae */; };
+		EC0EE97924953612001B600A /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = EC0EE97824953612001B600A /* art.scnassets */; };
 		F1CBA72C2494F575000E2302 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CBA72B2494F575000E2302 /* AppDelegate.swift */; };
-		F1CBA72E2494F575000E2302 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = F1CBA72D2494F575000E2302 /* art.scnassets */; };
 		F1CBA7302494F575000E2302 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CBA72F2494F575000E2302 /* ViewController.swift */; };
 		F1CBA7332494F575000E2302 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1CBA7312494F575000E2302 /* Main.storyboard */; };
 		F1CBA7352494F577000E2302 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1CBA7342494F577000E2302 /* Assets.xcassets */; };
@@ -19,9 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC0EE9722495256D001B600A /* eh.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; name = eh.dae; path = ../../../../../Desktop/art.scnassets/eh.dae; sourceTree = "<group>"; };
+		EC0EE97824953612001B600A /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		F1CBA7282494F575000E2302 /* Lost-Instrument-ARKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lost-Instrument-ARKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1CBA72B2494F575000E2302 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F1CBA72D2494F575000E2302 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		F1CBA72F2494F575000E2302 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F1CBA7322494F575000E2302 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F1CBA7342494F577000E2302 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,10 +64,11 @@
 		F1CBA72A2494F575000E2302 /* Lost-Instrument-ARKit */ = {
 			isa = PBXGroup;
 			children = (
+				EC0EE9722495256D001B600A /* eh.dae */,
 				F1CBA72B2494F575000E2302 /* AppDelegate.swift */,
-				F1CBA72D2494F575000E2302 /* art.scnassets */,
 				F1CBA72F2494F575000E2302 /* ViewController.swift */,
 				F1CBA77124950C98000E2302 /* ViewControllerObjectAddition.swift */,
+				EC0EE97824953612001B600A /* art.scnassets */,
 				F1CBA73F2494FAB0000E2302 /* ViewControllerARSCN.swift */,
 				F1CBA76F249503D8000E2302 /* FocusSquare.swift */,
 				F1CBA7312494F575000E2302 /* Main.storyboard */,
@@ -134,10 +137,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1CBA72E2494F575000E2302 /* art.scnassets in Resources */,
 				F1CBA7382494F577000E2302 /* LaunchScreen.storyboard in Resources */,
 				F1CBA7352494F577000E2302 /* Assets.xcassets in Resources */,
+				EC0EE97924953612001B600A /* art.scnassets in Resources */,
 				F1CBA7332494F575000E2302 /* Main.storyboard in Resources */,
+				EC0EE9732495256D001B600A /* eh.dae in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,13 +301,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8AM3K89UQM;
+				DEVELOPMENT_TEAM = 6YZF3WP4X9;
 				INFOPLIST_FILE = "Lost-Instrument-ARKit/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Jooc.Lost-Instrument-ARKit";
+				PRODUCT_BUNDLE_IDENTIFIER = "doublez.site.lost-instrument";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -315,13 +319,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8AM3K89UQM;
+				DEVELOPMENT_TEAM = 6YZF3WP4X9;
 				INFOPLIST_FILE = "Lost-Instrument-ARKit/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Jooc.Lost-Instrument-ARKit";
+				PRODUCT_BUNDLE_IDENTIFIER = "doublez.site.lost-instrument";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

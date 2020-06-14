@@ -13,9 +13,10 @@ import ARKit
 extension ViewController {
     
     fileprivate func getModel(named name: String) -> SCNNode?{
-        let scene = SCNScene(named: "art.scnassets/\(name)/\(name).scn")
-        guard let model = scene?.rootNode.childNode(withName: "SketchUp", recursively: false) else{return nil}
+        let scene = SCNScene(named: "art.scnassets/ship.scn")
         
+        guard let model = scene?.rootNode.childNode(withName: "ship", recursively: false) else{return nil}
+                
         model.name = name
         
         return model
@@ -26,7 +27,7 @@ extension ViewController {
         
         guard focusSquare != nil else{return}
         
-        let modelName = "pipa-zhengti"
+        let modelName = "ship"
         guard let model = getModel(named: modelName) else{
             print("Unable to load \(modelName)")
             return
