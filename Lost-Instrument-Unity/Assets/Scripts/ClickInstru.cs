@@ -4,16 +4,17 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
-public class ClickErHu : MonoBehaviour
+public class ClickInstru : MonoBehaviour
 {
     public bool isWatching = false;
     private RaycastHit ObjHit;
     private Ray CustomRay;
+    private int position = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        position = 0;
     }
 
     // Update is called once per frame
@@ -30,7 +31,7 @@ public class ClickErHu : MonoBehaviour
             if (EventSystem.current.IsPointerOverGameObject())
             #endif
             {
-                Debug.Log("当前点击在UI上" + EventSystem.current.currentSelectedGameObject);
+                //Debug.Log("当前点击在UI上" + EventSystem.current.currentSelectedGameObject);
             }
             else
             {
@@ -42,20 +43,45 @@ public class ClickErHu : MonoBehaviour
                 {
                     if (ObjHit.collider.gameObject != null)
                     {
-                        Debug.Log("Click Object:" + ObjHit.collider.gameObject.name);
-                        if("ErHuBox" == ObjHit.collider.gameObject.name)
+                        //Debug.Log("Click Object:" + ObjHit.collider.gameObject.name);
+                        if("ErHuBox" == ObjHit.collider.gameObject.name && position == 0)
                         {
-                            Debug.Log("Jump!");
+                            Debug.Log("ErHuJump!");
                             //SceneManager.LoadScene("ErHuScene");
 
                             // 访问单个模型
-                            WatchErHu();
+                            WatchInstru("Erhu");
                         }
+                        if ("PiPaBox" == ObjHit.collider.gameObject.name && position == 1)
+                        {
+                            Debug.Log("PiPaJump!");
+                            //SceneManager.LoadScene("ErHuScene");
+
+                            // 访问单个模型
+                            WatchInstru("PiPa");
+                        }
+                        if ("GuZhengBox" == ObjHit.collider.gameObject.name && position == 2)
+                        {
+                            Debug.Log("GuZhengJump!");
+                            //SceneManager.LoadScene("ErHuScene");
+
+                            // 访问单个模型
+                            WatchInstru("GuZheng");
+                        }
+                        if ("YangQinBox" == ObjHit.collider.gameObject.name && position == 3)
+                        {
+                            Debug.Log("YangQinJump!");
+                            //SceneManager.LoadScene("ErHuScene");
+
+                            // 访问单个模型
+                            WatchInstru("YangQin");
+                        }
+
                     }
                 }
                 else
                 {
-                    Debug.Log("Click Null");
+                    //Debug.Log("Click Null");
                 }
             }
         }
@@ -69,13 +95,18 @@ public class ClickErHu : MonoBehaviour
         isWatching = false;
     }
 
-    public void WatchErHu()
+    public void WatchInstru(string name)
     {
         isWatching = true;
-        Debug.Log("WatchErHu!");
+        //Debug.Log("Watch" + name + "!");
         //this.GetComponent<TouchMovement>().EnterWatching();
         //Debug.Log("WatchErHu!!!");
         GameObject.Find("Main Camera").GetComponent<TouchMovement>().EnterWatching();
         
+    }
+
+    public void changePos(int pos)
+    {
+        position = pos;
     }
 }
