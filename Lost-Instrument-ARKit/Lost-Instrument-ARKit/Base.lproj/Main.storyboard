@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="Lost_Instrument_ARKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sO0-jV-h2l">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dtv-N4-QJx">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bm-OJ-M8e">
+                                <rect key="frame" x="182" y="812" width="50" height="50"/>
+                                <state key="normal" image="add"/>
+                                <connections>
+                                    <action selector="addObjectButtonTapped:" destination="BV1-FR-VrT" eventType="touchUpInside" id="sb5-Zx-YhQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7bm-OJ-M8e" firstAttribute="centerX" secondItem="sO0-jV-h2l" secondAttribute="centerX" id="5Sq-MK-gZL"/>
+                            <constraint firstAttribute="trailing" secondItem="dtv-N4-QJx" secondAttribute="trailing" id="NEC-n2-wqw"/>
+                            <constraint firstItem="dtv-N4-QJx" firstAttribute="leading" secondItem="sO0-jV-h2l" secondAttribute="leading" id="PKT-r6-u1i"/>
+                            <constraint firstAttribute="bottom" secondItem="dtv-N4-QJx" secondAttribute="bottom" id="VgY-Sd-EIa"/>
+                            <constraint firstItem="7bm-OJ-M8e" firstAttribute="bottom" secondItem="iQg-nM-R2D" secondAttribute="bottom" id="ZsH-QB-thZ"/>
+                            <constraint firstItem="dtv-N4-QJx" firstAttribute="top" secondItem="sO0-jV-h2l" secondAttribute="top" id="dSK-jj-rXx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iQg-nM-R2D"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="dtv-N4-QJx" id="EJq-WC-JAv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="92.410714285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="add" width="50" height="50"/>
+    </resources>
+</document>
