@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ExitWatchButton : MonoBehaviour
+public class ClickBackButton : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()

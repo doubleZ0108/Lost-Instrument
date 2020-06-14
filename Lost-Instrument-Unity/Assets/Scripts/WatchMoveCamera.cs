@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// 观察模式相机移动
 public class WatchMoveCamera : MonoBehaviour
 {
     public float moveRate = 0.01f;
@@ -17,7 +18,7 @@ public class WatchMoveCamera : MonoBehaviour
     void Start()
     {
         distance = 0;
-        distanceMax = 2f;
+        distanceMax = 1f;
     }
 
     // Update is called once per frame

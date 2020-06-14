@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+// 模型在轮播台中的旋转
 public class SelectRotate : MonoBehaviour
 {
     public GameObject center;
