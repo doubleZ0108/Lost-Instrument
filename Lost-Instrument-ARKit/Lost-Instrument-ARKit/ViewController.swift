@@ -68,12 +68,12 @@ class ViewController: UIViewController {
         
         let hitTest = sceneView.hitTest(screenCenter, types: .existingPlaneUsingExtent)
         if let hitTestResult = hitTest.first{
-            print("Focus square hits a plane")
+//            print("Focus square hits a plane")
             
             let canAddNewModel = hitTestResult.anchor is ARPlaneAnchor
             focusSquareLocal.isClosed = canAddNewModel
         }else{
-            print("Focus square does not hit a plane")
+//            print("Focus square does not hit a plane")
             
             focusSquareLocal.isClosed = false
         }

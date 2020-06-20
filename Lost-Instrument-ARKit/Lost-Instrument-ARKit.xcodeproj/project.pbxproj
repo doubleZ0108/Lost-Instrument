@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EC0EE9732495256D001B600A /* eh.dae in Resources */ = {isa = PBXBuildFile; fileRef = EC0EE9722495256D001B600A /* eh.dae */; };
 		EC0EE97924953612001B600A /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = EC0EE97824953612001B600A /* art.scnassets */; };
 		F1CBA72C2494F575000E2302 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CBA72B2494F575000E2302 /* AppDelegate.swift */; };
 		F1CBA7302494F575000E2302 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CBA72F2494F575000E2302 /* ViewController.swift */; };
@@ -141,7 +140,6 @@
 				F1CBA7352494F577000E2302 /* Assets.xcassets in Resources */,
 				EC0EE97924953612001B600A /* art.scnassets in Resources */,
 				F1CBA7332494F575000E2302 /* Main.storyboard in Resources */,
-				EC0EE9732495256D001B600A /* eh.dae in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,13 +299,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6YZF3WP4X9;
+				DEVELOPMENT_TEAM = 8AM3K89UQM;
 				INFOPLIST_FILE = "Lost-Instrument-ARKit/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "doublez.site.lost-instrument";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jooc.lost-instrument";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -319,13 +317,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6YZF3WP4X9;
+				DEVELOPMENT_TEAM = 8AM3K89UQM;
 				INFOPLIST_FILE = "Lost-Instrument-ARKit/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "doublez.site.lost-instrument";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jooc.lost-instrument";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

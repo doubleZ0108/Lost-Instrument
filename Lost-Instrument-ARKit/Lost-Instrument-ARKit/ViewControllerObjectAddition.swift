@@ -13,9 +13,9 @@ import ARKit
 extension ViewController {
     
     fileprivate func getModel(named name: String) -> SCNNode?{
-        let scene = SCNScene(named: "art.scnassets/ship.scn")
+        let scene = SCNScene(named: "art.scnassets/eh.scn")
         
-        guard let model = scene?.rootNode.childNode(withName: "ship", recursively: false) else{return nil}
+        guard let model = scene?.rootNode.childNode(withName: "erhu", recursively: false) else{return nil}
                 
         model.name = name
         
