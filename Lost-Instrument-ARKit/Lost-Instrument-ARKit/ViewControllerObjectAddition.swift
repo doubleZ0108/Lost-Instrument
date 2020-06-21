@@ -10,24 +10,37 @@ import UIKit
 import SceneKit
 import ARKit
 
+enum Instrument {
+    case erhu, guzheng, pipa, yangqin
+    
+    var rootNodeName: String{
+        switch self {
+        case .erhu: return "erhu"
+        case .guzheng: return "guzheng"
+        case .pipa: return "pipa"
+        case .yangqin: return "yangqin"
+        }
+    }
+}
+
 extension ViewController {
     
     fileprivate func getModel(named name: String) -> SCNNode?{
-        let scene = SCNScene(named: "art.scnassets/eh.scn")
+        let scene = SCNScene(named: "art.scnassets/instruments.scn")
         
-        guard let model = scene?.rootNode.childNode(withName: "erhu", recursively: false) else{return nil}
+        guard let model = scene?.rootNode.childNode(withName: "\(name)", recursively: false) else{return nil}
                 
         model.name = name
-        
         return model
     }
     
-    @IBAction func addObjectButtonTapped(_ sender: Any) {
-        print("Add Button clicked")
+    
+    func addObjectToARSCN(of target: Instrument) {
+        print("[Add Button clicked] for: " + target.rootNodeName)
         
         guard focusSquare != nil else{return}
         
-        let modelName = "ship"
+        let modelName = target.rootNodeName
         guard let model = getModel(named: modelName) else{
             print("Unable to load \(modelName)")
             return

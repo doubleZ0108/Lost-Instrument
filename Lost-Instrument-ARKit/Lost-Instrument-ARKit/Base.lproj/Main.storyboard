@@ -18,22 +18,49 @@
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dtv-N4-QJx">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </arscnView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bm-OJ-M8e">
-                                <rect key="frame" x="182" y="812" width="50" height="50"/>
-                                <state key="normal" image="add"/>
-                                <connections>
-                                    <action selector="addObjectButtonTapped:" destination="BV1-FR-VrT" eventType="touchUpInside" id="sb5-Zx-YhQ"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="tfb-fk-uZb">
+                                <rect key="frame" x="62" y="812" width="290" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Igt-P9-xIK">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <state key="normal" image="add"/>
+                                        <connections>
+                                            <action selector="AddButton1Clicked:" destination="BV1-FR-VrT" eventType="touchUpInside" id="f6t-bR-tGK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpF-dy-ix7">
+                                        <rect key="frame" x="80" y="0.0" width="50" height="50"/>
+                                        <state key="normal" image="add"/>
+                                        <connections>
+                                            <action selector="AddButton2Clicked:" destination="BV1-FR-VrT" eventType="touchUpInside" id="LON-j5-Ben"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bm-OJ-M8e">
+                                        <rect key="frame" x="160" y="0.0" width="50" height="50"/>
+                                        <state key="normal" image="add"/>
+                                        <connections>
+                                            <action selector="AddButton3Clicked:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Md7-qb-cke"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLR-iX-2Vt">
+                                        <rect key="frame" x="240" y="0.0" width="50" height="50"/>
+                                        <state key="normal" image="add"/>
+                                        <connections>
+                                            <action selector="AddButton4Clicked:" destination="BV1-FR-VrT" eventType="touchUpInside" id="wEj-Vx-7Sb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="7bm-OJ-M8e" firstAttribute="centerX" secondItem="sO0-jV-h2l" secondAttribute="centerX" id="5Sq-MK-gZL"/>
+                            <constraint firstItem="iQg-nM-R2D" firstAttribute="trailing" secondItem="tfb-fk-uZb" secondAttribute="trailing" constant="62" id="Mp2-Ak-j1N"/>
                             <constraint firstAttribute="trailing" secondItem="dtv-N4-QJx" secondAttribute="trailing" id="NEC-n2-wqw"/>
                             <constraint firstItem="dtv-N4-QJx" firstAttribute="leading" secondItem="sO0-jV-h2l" secondAttribute="leading" id="PKT-r6-u1i"/>
+                            <constraint firstItem="tfb-fk-uZb" firstAttribute="leading" secondItem="iQg-nM-R2D" secondAttribute="leading" constant="62" id="Rdc-7q-hhC"/>
                             <constraint firstAttribute="bottom" secondItem="dtv-N4-QJx" secondAttribute="bottom" id="VgY-Sd-EIa"/>
-                            <constraint firstItem="7bm-OJ-M8e" firstAttribute="bottom" secondItem="iQg-nM-R2D" secondAttribute="bottom" id="ZsH-QB-thZ"/>
                             <constraint firstItem="dtv-N4-QJx" firstAttribute="top" secondItem="sO0-jV-h2l" secondAttribute="top" id="dSK-jj-rXx"/>
+                            <constraint firstItem="tfb-fk-uZb" firstAttribute="bottom" secondItem="iQg-nM-R2D" secondAttribute="bottom" id="g2s-v5-5lO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iQg-nM-R2D"/>
                     </view>

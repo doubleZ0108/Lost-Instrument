@@ -12,8 +12,6 @@ class FocusSquare: SCNNode{
     
     var isClosed: Bool = true{
         didSet{
-            print("checking close")
-            print(self.isClosed)
             geometry?.firstMaterial?.diffuse.contents = self.isClosed ? UIImage(named: "close") : UIImage(named: "open")
         }
     }
@@ -22,7 +20,7 @@ class FocusSquare: SCNNode{
         super.init()
         
         let plane = SCNPlane(width: 0.1, height: 0.1)
-        plane.firstMaterial?.diffuse.contents = UIImage(named: "FocusSquare/close")
+        plane.firstMaterial?.diffuse.contents = UIImage(named: "close")
         plane.firstMaterial?.isDoubleSided = true
         
         geometry = plane

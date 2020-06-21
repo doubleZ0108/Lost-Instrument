@@ -39,6 +39,23 @@ class ViewController: UIViewController {
 //        sceneView.scene = scene
     }
     
+    
+    @IBAction func AddButton1Clicked(_ sender: Any) {
+        addObjectToARSCN(of: Instrument.erhu)
+    }
+    
+    @IBAction func AddButton2Clicked(_ sender: Any) {
+        addObjectToARSCN(of: Instrument.guzheng)
+    }
+    
+    @IBAction func AddButton3Clicked(_ sender: Any) {
+        addObjectToARSCN(of: Instrument.pipa)
+    }
+    
+    @IBAction func AddButton4Clicked(_ sender: Any) {
+        addObjectToARSCN(of: Instrument.yangqin)
+    }
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
