@@ -98,7 +98,9 @@ public class ModelMovementTouch : MonoBehaviour
                 transform.Rotate(Vector3.right, fMouseY * speed, Space.World);
                 //rotateUpDown += -fMouseX * speed;
                 //rotateLeftRight += fMouseY * speed;
+                
                 rotateBack += Vector3.up * (-fMouseX) * speed + Vector3.right * fMouseY * speed;
+                Debug.Log("========_mouseDown:rotateBack:" + rotateBack.x.ToString() + ";" + rotateBack.y.ToString() + ";" + rotateBack.z.ToString());
             }
 
         }

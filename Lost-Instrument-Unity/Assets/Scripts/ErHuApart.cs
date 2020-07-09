@@ -64,6 +64,10 @@ public class ErHuApart : MonoBehaviour
                 distance12 = moveComponent(node12, direction12, distanceMax12 / moveTime, distance12, distanceMax12);
                 distance14 = moveComponent(node14, direction14, distanceMax14 / moveTime, distance14, distanceMax14);
                 distance16 = moveComponent(node16, direction16, distanceMax16 / moveTime, distance16, distanceMax16);
+                if (distance6 == 0 && distance4 == 0)
+                {
+                    GameObject.Find("ApartButton").GetComponent<ClickApartButton>().reverseApart();
+                }
             }
             else
             {
@@ -74,6 +78,10 @@ public class ErHuApart : MonoBehaviour
                 distance12 = moveComponent(node12, -direction12, distanceMax12 / moveTime, distance12, distanceMax12);
                 distance14 = moveComponent(node14, -direction14, distanceMax14 / moveTime, distance14, distanceMax14);
                 distance16 = moveComponent(node16, -direction16, distanceMax16 / moveTime, distance16, distanceMax16);
+                if (distance4 == 0 && distance6 == 0)
+                {
+                    GameObject.Find("ApartButton").GetComponent<ClickApartButton>().reverseApart();
+                }
             }
             
         }
@@ -94,7 +102,7 @@ public class ErHuApart : MonoBehaviour
             move = false;
             moveOut = !moveOut;
             apart = !apart;
-            GameObject.Find("ApartButton").GetComponent<ClickApartButton>().reverseApart();
+            //GameObject.Find("ApartButton").GetComponent<ClickApartButton>().reverseApart();
             distance = 0;
         }
         return distance;

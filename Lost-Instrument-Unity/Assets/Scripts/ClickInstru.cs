@@ -46,7 +46,7 @@ public class ClickInstru : MonoBehaviour
                         //Debug.Log("Click Object:" + ObjHit.collider.gameObject.name);
                         if("ErHuBox" == ObjHit.collider.gameObject.name && position == 0)
                         {
-                            Debug.Log("ErHuJump!");
+                            //Debug.Log("ErHuJump!");
                             //SceneManager.LoadScene("ErHuScene");
 
                             // 访问单个模型
@@ -54,7 +54,7 @@ public class ClickInstru : MonoBehaviour
                         }
                         if ("PiPaBox" == ObjHit.collider.gameObject.name && position == 1)
                         {
-                            Debug.Log("PiPaJump!");
+                            //Debug.Log("PiPaJump!");
                             //SceneManager.LoadScene("ErHuScene");
 
                             // 访问单个模型

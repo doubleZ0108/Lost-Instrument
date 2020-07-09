@@ -187,12 +187,28 @@ public class TouchMovement : MonoBehaviour
         bool apart = GameObject.Find("ApartButton").GetComponent<ClickApartButton>().apart;
         if (apart)
         {
-            GameObject.Find("ErHu_total").GetComponent<ErHuApart>().moveInApart();
-            GameObject.Find("ApartButton").GetComponent<ClickApartButton>().reverseApart();
+            if (position == 0)
+            {
+                GameObject.Find("ErHu_total").GetComponent<ErHuApart>().moveInApart();
+            }
+            else if (position == 1)
+            {
+                GameObject.Find("PiPa_total").GetComponent<PiPaApart>().moveInApart();
+            }
+            else if (position == 2)
+            {
+                GameObject.Find("GuZheng_total").GetComponent<GuZhengApart>().moveInApart();
+            }
+            else
+            {
+                GameObject.Find("YangQin_total").GetComponent<YangQinApart>().moveInApart();
+            }
+
+            //GameObject.Find("ApartButton").GetComponent<ClickApartButton>().reverseApart();
         }
 
-
-        GameObject.Find("ErHuBox").GetComponent<ModelMovementTouch>().ExitWatching();
+        GameObject aimOne = (GameObject)objects[position];
+        aimOne.GetComponent<ModelMovementTouch>().ExitWatching();
         
 
     }
@@ -209,6 +225,9 @@ public class TouchMovement : MonoBehaviour
         GameObject leftOne = (GameObject)objects[(position + 3) % 4];
         leftOne.GetComponent<WatchMove>().moving(Vector3.right);
 
+        // UI消失
+        changeButtonShow(false);
+
         this.GetComponent<WatchMoveCamera>().moving(Vector3.back);
         GameObject.Find("ShowingRotate").GetComponent<ClickInstru>().ExitWatching();
     }
@@ -220,6 +239,7 @@ public class TouchMovement : MonoBehaviour
         // 进行四个物体的移动操作
         // 三个物体的移出相机范围，相机和ui前移
         Debug.Log("isWatching! position=" + position);
+
         GameObject aimOne = (GameObject)objects[position];
         aimOne.GetComponent<WatchMove>().rotate();
 
@@ -238,8 +258,13 @@ public class TouchMovement : MonoBehaviour
         leftOne.GetComponent<WatchMove>().moving(Vector3.left);
         //leftOne.transform.Translate(Vector3.back * moveRate * Time.deltaTime);
 
+        // UI显示
+        changeButtonShow(true);
+
+
         //GameObject.Find("ErHuBox").GetComponent<ModelMovementTouch>().aim = (GameObject)objects[position];
-        GameObject.Find("ErHuBox").GetComponent<ModelMovementTouch>().EnterWatching();
+        GameObject aimOne = (GameObject)objects[position];
+        aimOne.GetComponent<ModelMovementTouch>().EnterWatching();
         this.GetComponent<WatchMoveCamera>().moving(Vector3.forward);
     }
 
@@ -247,5 +272,17 @@ public class TouchMovement : MonoBehaviour
     public int getPosition()
     {
         return position;
+    }
+
+    public void changeButtonShow(bool show)
+    {
+        GameObject backButton = GameObject.Find("BackButton");
+        GameObject apartButton = GameObject.Find("ApartButton");
+        backButton.GetComponent<CanvasGroup>().alpha = show? 1 : 0;
+        backButton.GetComponent<CanvasGroup>().interactable = show;
+        backButton.GetComponent<CanvasGroup>().blocksRaycasts = show;
+        apartButton.GetComponent<CanvasGroup>().alpha = show ? 1 : 0;
+        apartButton.GetComponent<CanvasGroup>().interactable = show;
+        apartButton.GetComponent<CanvasGroup>().blocksRaycasts = show;
     }
 }

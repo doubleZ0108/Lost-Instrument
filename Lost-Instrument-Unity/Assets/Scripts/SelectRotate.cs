@@ -46,8 +46,8 @@ public class SelectRotate : MonoBehaviour
 
         if (angle <= achieveAngle)
         {
-            Debug.Log("angle" + position.ToString() + ":" + angle.ToString());
-            Debug.Log("achieveAngle" + position.ToString() + ":" + achieveAngle.ToString());
+            //Debug.Log("angle" + position.ToString() + ":" + angle.ToString());
+            //Debug.Log("achieveAngle" + position.ToString() + ":" + achieveAngle.ToString());
 
             rotate = false;
             GameObject.Find("Main Camera").SendMessage("stopRotate");
