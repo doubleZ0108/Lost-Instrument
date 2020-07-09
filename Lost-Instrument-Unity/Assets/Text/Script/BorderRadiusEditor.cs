@@ -1,12 +1,15 @@
 ﻿using System.Linq;
 using UnityEngine;
+#if UNITY_EDITOR
 using UnityEditor.AnimatedValues;
 using UnityEngine.UI;
 using UnityEditor;
 using UnityEditor.UI;
+#endif
 
 namespace GFramework
 {
+    #if UNITY_EDITOR
     [CustomEditor(typeof(BorderRadius), true)]
     //[CanEditMultipleObjects]
     public class BorderRadiusEditor : ImageEditor
@@ -41,4 +44,5 @@ namespace GFramework
             this.serializedObject.ApplyModifiedProperties();
         }
     }
+    #endif
 }

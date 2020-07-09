@@ -299,13 +299,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8AM3K89UQM;
+				DEVELOPMENT_TEAM = 6YZF3WP4X9;
 				INFOPLIST_FILE = "Lost-Instrument-ARKit/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Jooc.lost-instrument";
+				PRODUCT_BUNDLE_IDENTIFIER = "site.doublez.lost-instrument";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -317,13 +317,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8AM3K89UQM;
+				DEVELOPMENT_TEAM = 6YZF3WP4X9;
 				INFOPLIST_FILE = "Lost-Instrument-ARKit/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Jooc.lost-instrument";
+				PRODUCT_BUNDLE_IDENTIFIER = "site.doublez.lost-instrument";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
