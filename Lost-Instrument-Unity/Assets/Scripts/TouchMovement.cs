@@ -184,6 +184,8 @@ public class TouchMovement : MonoBehaviour
     { 
         isWatching = false;
         // 进行三个物体，和相机、UI 的移回操作
+        this.GetComponent<CameraMove>().startWatchMode(false);
+
         bool apart = GameObject.Find("ApartButton").GetComponent<ClickApartButton>().apart;
         if (apart)
         {
@@ -230,14 +232,14 @@ public class TouchMovement : MonoBehaviour
 
         this.GetComponent<WatchMoveCamera>().moving(Vector3.back);
         GameObject.Find("ShowingRotate").GetComponent<ClickInstru>().ExitWatching();
-
-        this.GetComponent<CameraMove>().startWatchMode(false);
     }
 
 
     public void EnterWatching()
     {
         isWatching = true;
+
+        this.GetComponent<CameraMove>().startWatchMode(true);
         // 进行四个物体的移动操作
         // 三个物体的移出相机范围，相机和ui前移
         Debug.Log("isWatching! position=" + position);
@@ -270,7 +272,7 @@ public class TouchMovement : MonoBehaviour
         aimOne.GetComponent<ModelMovementTouch>().EnterWatching();
         this.GetComponent<WatchMoveCamera>().moving(Vector3.forward);
 
-        this.GetComponent<CameraMove>().startWatchMode(true);
+        
     }
 
 

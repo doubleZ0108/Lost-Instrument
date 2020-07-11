@@ -6359,7 +6359,7 @@ MonoBehaviour:
   move: 0
   rotateIn: 0
   rotateOut: 0
-  distanceMax: 10
+  distanceMax: 80
   angleMax: 360
   direction: {x: 0, y: 0, z: 0}
   aimRotate: {x: 0.2, y: 1, z: 0}
@@ -6379,6 +6379,7 @@ MonoBehaviour:
   exitWatching: 0
   aim: {fileID: 0}
   speed: 6
+  friction: 0.3
   canApart: 0
 --- !u!1 &922492281 stripped
 GameObject:
@@ -6507,6 +6508,7 @@ MonoBehaviour:
   exitWatching: 1
   aim: {fileID: 0}
   speed: 6
+  friction: 0.3
   canApart: 0
 --- !u!114 &963194231
 MonoBehaviour:
@@ -12503,7 +12505,7 @@ MonoBehaviour:
   move: 1
   rotateIn: 0
   rotateOut: 0
-  distanceMax: 50
+  distanceMax: 80
   angleMax: 180
   direction: {x: 0, y: 0, z: 0}
   aimRotate: {x: 0.2, y: 1, z: 0}
@@ -12523,6 +12525,7 @@ MonoBehaviour:
   exitWatching: 0
   aim: {fileID: 0}
   speed: 6
+  friction: 0.3
   canApart: 0
 --- !u!1 &1590239693 stripped
 GameObject:
@@ -13144,7 +13147,7 @@ MonoBehaviour:
   move: 0
   rotateIn: 0
   rotateOut: 0
-  distanceMax: 10
+  distanceMax: 80
   angleMax: 360
   direction: {x: 0, y: 0, z: 0}
   aimRotate: {x: 0.2, y: 1, z: 0}
@@ -13164,6 +13167,7 @@ MonoBehaviour:
   exitWatching: 0
   aim: {fileID: 0}
   speed: 6
+  friction: 0.3
   canApart: 0
 --- !u!4 &1917199570 stripped
 Transform:
@@ -13593,7 +13597,7 @@ MonoBehaviour:
   move: 0
   rotateIn: 0
   rotateOut: 0
-  distanceMax: 10
+  distanceMax: 80
   angleMax: 360
   direction: {x: 0, y: 0, z: 0}
   aimRotate: {x: 0.2, y: 1, z: 0}
@@ -13613,6 +13617,7 @@ MonoBehaviour:
   exitWatching: 0
   aim: {fileID: 0}
   speed: 6
+  friction: 0.3
   canApart: 0
 --- !u!1 &2066056041
 GameObject:

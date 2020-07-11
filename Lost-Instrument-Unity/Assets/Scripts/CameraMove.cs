@@ -116,7 +116,7 @@ public class CameraMove : MonoBehaviour
             float distCovered = (Time.time - startTime) * moveSpeed;
             float fractionOfJourney = distCovered / journeyLength;
             transform.position = Vector3.Lerp(tmpCameraPos, originalCameraPos, fractionOfJourney);
-            if (transform.position == originalCameraPos)
+            if (Vector3.Distance(transform.position,originalCameraPos)<0.1f)
             {
                 startBackPos = false;
                 //GameObject.Find("ShowImage").GetComponent<UIShowAndHide>().Show();

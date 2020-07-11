@@ -100,15 +100,19 @@ public class ModelMovementTouch : MonoBehaviour
 
             if (_mouseDown)
             {
-                float fMouseX = Input.GetAxis("Mouse X");
-                float fMouseY = Input.GetAxis("Mouse Y");
-                transform.Rotate(Vector3.up, -fMouseX * speed * friction, Space.World);
-                transform.Rotate(Vector3.right, fMouseY * speed * friction, Space.World);
-                //rotateUpDown += -fMouseX * speed;
-                //rotateLeftRight += fMouseY * speed;
-                
-                rotateBack += Vector3.up * (-fMouseX) * speed * friction + Vector3.right * fMouseY * speed * friction;
-                //Debug.Log("========_mouseDown:rotateBack:" + rotateBack.x.ToString() + ";" + rotateBack.y.ToString() + ";" + rotateBack.z.ToString());
+                if (Input.GetTouch(0).phase == TouchPhase.Moved)
+                {
+                    float fMouseX = Input.GetAxis("Mouse X");
+                    float fMouseY = Input.GetAxis("Mouse Y");
+                    transform.Rotate(Vector3.up, -fMouseX * speed * friction, Space.World);
+                    transform.Rotate(Vector3.right, fMouseY * speed * friction, Space.World);
+                    //rotateUpDown += -fMouseX * speed;
+                    //rotateLeftRight += fMouseY * speed;
+
+                    rotateBack += Vector3.up * (-fMouseX) * speed * friction + Vector3.right * fMouseY * speed * friction;
+                    //Debug.Log("========_mouseDown:rotateBack:" + rotateBack.x.ToString() + ";" + rotateBack.y.ToString() + ";" + rotateBack.z.ToString());
+
+                }
 
 
                 // 双击 && 长按
@@ -147,13 +151,13 @@ public class ModelMovementTouch : MonoBehaviour
                                     GameObject.Find("Main Camera").GetComponent<DemoScript>().GoFade();
                                 }
                                 
-                                canApart = false;
+                                //canApart = false;
                             }
 
                         }
                         //长按
                         Debug.Log("Input.touchCount="+ Input.touchCount);
-                        if (Input.touchCount == 1)
+                        if (Input.touchCount == 1 && canApart)
                         {
                             //Debug.Log("长按=");
                             Touch touch = Input.GetTouch(0);
