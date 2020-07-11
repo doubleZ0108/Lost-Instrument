@@ -12503,7 +12503,7 @@ MonoBehaviour:
   move: 1
   rotateIn: 0
   rotateOut: 0
-  distanceMax: 10
+  distanceMax: 50
   angleMax: 180
   direction: {x: 0, y: 0, z: 0}
   aimRotate: {x: 0.2, y: 1, z: 0}

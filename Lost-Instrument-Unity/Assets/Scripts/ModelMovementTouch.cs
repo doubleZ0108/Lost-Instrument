@@ -22,6 +22,7 @@ public class ModelMovementTouch : MonoBehaviour
     private Touch oldTouch2;  //上次触摸点2(手指2)
 
     public float speed = 2;
+    public float friction = 0.3f;
 
     private bool _mouseDown = false;
 
@@ -101,12 +102,12 @@ public class ModelMovementTouch : MonoBehaviour
             {
                 float fMouseX = Input.GetAxis("Mouse X");
                 float fMouseY = Input.GetAxis("Mouse Y");
-                transform.Rotate(Vector3.up, -fMouseX * speed, Space.World);
-                transform.Rotate(Vector3.right, fMouseY * speed, Space.World);
+                transform.Rotate(Vector3.up, -fMouseX * speed * friction, Space.World);
+                transform.Rotate(Vector3.right, fMouseY * speed * friction, Space.World);
                 //rotateUpDown += -fMouseX * speed;
                 //rotateLeftRight += fMouseY * speed;
                 
-                rotateBack += Vector3.up * (-fMouseX) * speed + Vector3.right * fMouseY * speed;
+                rotateBack += Vector3.up * (-fMouseX) * speed * friction + Vector3.right * fMouseY * speed * friction;
                 //Debug.Log("========_mouseDown:rotateBack:" + rotateBack.x.ToString() + ";" + rotateBack.y.ToString() + ";" + rotateBack.z.ToString());
 
 
@@ -141,7 +142,11 @@ public class ModelMovementTouch : MonoBehaviour
                             {
                                 //Destroy(hitInfo.collider.gameObject);
                                 //Debug.Log("双击");
-                                GameObject.Find("Main Camera").GetComponent<DemoScript>().GoFade();
+                                if (hitInfo.collider.gameObject.name == "ErHuBox")
+                                {
+                                    GameObject.Find("Main Camera").GetComponent<DemoScript>().GoFade();
+                                }
+                                
                                 canApart = false;
                             }
 
