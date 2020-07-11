@@ -131,7 +131,7 @@ public class ModelMovementTouch : MonoBehaviour
                     //    }
                     //}
 
-                    if (hitInfo.collider.gameObject.name == "ErHuBox")
+                    if (hitInfo.collider.gameObject.name == "ErHuBox" || hitInfo.collider.gameObject.name == "PiPaBox" || hitInfo.collider.gameObject.name == "GuZhengBox" || hitInfo.collider.gameObject.name == "YangQinBox")
                     {
                         //Debug.Log("双击or长按");
                         //双击模型使模型销毁
