@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ErHuScene.unity
     guid: 712bbdc34b9f4402ab726ab456b0a586
+  - enabled: 1
+    path: Assets/Scenes/GuZhengScene.unity
+    guid: 74b9dfbdef4964e50a978f9e2e51dff3
   m_configObjects: {}
