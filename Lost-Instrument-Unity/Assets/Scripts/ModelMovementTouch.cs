@@ -100,9 +100,11 @@ public class ModelMovementTouch : MonoBehaviour
 
             if (_mouseDown)
             {
-                if (Input.GetTouch(0).phase == TouchPhase.Moved){
-                    float fMouseX = Input.GetAxis("Mouse X");
-                    float fMouseY = Input.GetAxis("Mouse Y");
+                
+                float fMouseX = Input.GetAxis("Mouse X");
+                float fMouseY = Input.GetAxis("Mouse Y");
+                if (Input.GetTouch(0).phase == TouchPhase.Moved)
+                {
                     transform.Rotate(Vector3.up, -fMouseX * speed * friction, Space.World);
                     transform.Rotate(Vector3.right, fMouseY * speed * friction, Space.World);
                     //rotateUpDown += -fMouseX * speed;
