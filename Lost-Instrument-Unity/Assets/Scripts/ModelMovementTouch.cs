@@ -149,7 +149,11 @@ public class ModelMovementTouch : MonoBehaviour
                                 {
                                     GameObject.Find("Main Camera").GetComponent<DemoScript>().GoFade();
                                 }
-                                
+                                else if (hitInfo.collider.gameObject.name == "GuZhengBox")
+                                {
+                                    GameObject.Find("Main Camera").GetComponent<DemoScript>().GoFade("GuZhengScene");
+                                }
+
                                 canApart = false;
                             }
 
