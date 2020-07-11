@@ -10,19 +10,6 @@ import UIKit
 import SceneKit
 import ARKit
 
-enum Instrument {
-    case erhu, guzheng, pipa, yangqin
-    
-    var rootNodeName: String{
-        switch self {
-        case .erhu: return "erhu"
-        case .guzheng: return "guzheng"
-        case .pipa: return "pipa"
-        case .yangqin: return "yangqin"
-        }
-    }
-}
-
 extension ViewController {
     
     fileprivate func getModel(named name: String) -> SCNNode?{
@@ -46,6 +33,8 @@ extension ViewController {
             return
         }
         
+//        let model = getModel(named: modelName)!
+        
         let hitTest = sceneView.hitTest(screenCenter, types: .existingPlaneUsingExtent)
         guard let worldTransformColum3 = hitTest.first?.worldTransform.columns.3 else{ return }
         model.position = SCNVector3(worldTransformColum3.x, worldTransformColum3.y, worldTransformColum3.z)
@@ -55,6 +44,8 @@ extension ViewController {
         
         modelsInTheScene.append(model)
         print("Currently have \(modelsInTheScene.count) model(s) in the scene" )
+        
+        focusSquare?.hide()
     }
     
 }

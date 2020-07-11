@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -18,11 +18,15 @@
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dtv-N4-QJx">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </arscnView>
-                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="tfb-fk-uZb">
-                                <rect key="frame" x="62" y="812" width="290" height="50"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="tfb-fk-uZb">
+                                <rect key="frame" x="62" y="792" width="290" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Igt-P9-xIK">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="30d-Df-pqG"/>
+                                            <constraint firstAttribute="width" constant="50" id="Anp-HB-RBP"/>
+                                        </constraints>
                                         <state key="normal" image="add"/>
                                         <connections>
                                             <action selector="AddButton1Clicked:" destination="BV1-FR-VrT" eventType="touchUpInside" id="f6t-bR-tGK"/>
@@ -30,6 +34,10 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpF-dy-ix7">
                                         <rect key="frame" x="80" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="iaR-af-QN1"/>
+                                            <constraint firstAttribute="width" constant="50" id="shp-q4-IG2"/>
+                                        </constraints>
                                         <state key="normal" image="add"/>
                                         <connections>
                                             <action selector="AddButton2Clicked:" destination="BV1-FR-VrT" eventType="touchUpInside" id="LON-j5-Ben"/>
@@ -37,6 +45,10 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bm-OJ-M8e">
                                         <rect key="frame" x="160" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Wuq-AU-Uhz"/>
+                                            <constraint firstAttribute="width" constant="50" id="z4H-Gs-yce"/>
+                                        </constraints>
                                         <state key="normal" image="add"/>
                                         <connections>
                                             <action selector="AddButton3Clicked:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Md7-qb-cke"/>
@@ -44,6 +56,10 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLR-iX-2Vt">
                                         <rect key="frame" x="240" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="B1k-48-Oh3"/>
+                                            <constraint firstAttribute="height" constant="50" id="uj1-Sn-rxe"/>
+                                        </constraints>
                                         <state key="normal" image="add"/>
                                         <connections>
                                             <action selector="AddButton4Clicked:" destination="BV1-FR-VrT" eventType="touchUpInside" id="wEj-Vx-7Sb"/>
@@ -54,13 +70,13 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="iQg-nM-R2D" firstAttribute="trailing" secondItem="tfb-fk-uZb" secondAttribute="trailing" constant="62" id="Mp2-Ak-j1N"/>
-                            <constraint firstAttribute="trailing" secondItem="dtv-N4-QJx" secondAttribute="trailing" id="NEC-n2-wqw"/>
-                            <constraint firstItem="dtv-N4-QJx" firstAttribute="leading" secondItem="sO0-jV-h2l" secondAttribute="leading" id="PKT-r6-u1i"/>
-                            <constraint firstItem="tfb-fk-uZb" firstAttribute="leading" secondItem="iQg-nM-R2D" secondAttribute="leading" constant="62" id="Rdc-7q-hhC"/>
-                            <constraint firstAttribute="bottom" secondItem="dtv-N4-QJx" secondAttribute="bottom" id="VgY-Sd-EIa"/>
-                            <constraint firstItem="dtv-N4-QJx" firstAttribute="top" secondItem="sO0-jV-h2l" secondAttribute="top" id="dSK-jj-rXx"/>
-                            <constraint firstItem="tfb-fk-uZb" firstAttribute="bottom" secondItem="iQg-nM-R2D" secondAttribute="bottom" id="g2s-v5-5lO"/>
+                            <constraint firstItem="iQg-nM-R2D" firstAttribute="trailing" secondItem="tfb-fk-uZb" secondAttribute="trailing" constant="62" id="46a-Sw-frI"/>
+                            <constraint firstItem="tfb-fk-uZb" firstAttribute="leading" secondItem="iQg-nM-R2D" secondAttribute="leading" constant="62" id="PFi-a2-MuC"/>
+                            <constraint firstItem="dtv-N4-QJx" firstAttribute="trailing" secondItem="iQg-nM-R2D" secondAttribute="trailing" id="dia-gF-70d"/>
+                            <constraint firstItem="dtv-N4-QJx" firstAttribute="top" secondItem="sO0-jV-h2l" secondAttribute="top" id="fq0-ny-nkv"/>
+                            <constraint firstAttribute="bottom" secondItem="dtv-N4-QJx" secondAttribute="bottom" id="jbL-4y-GRe"/>
+                            <constraint firstItem="dtv-N4-QJx" firstAttribute="leading" secondItem="iQg-nM-R2D" secondAttribute="leading" id="u1h-ZF-FTI"/>
+                            <constraint firstItem="iQg-nM-R2D" firstAttribute="bottom" secondItem="tfb-fk-uZb" secondAttribute="bottom" constant="20" id="yP9-Qy-ie8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iQg-nM-R2D"/>
                     </view>

@@ -9,7 +9,7 @@ using UnityEngine.Video;
 public class AnimationControl : MonoBehaviour
 {
     public GameObject myAnimation;
-    public GameObject skipButton;
+    // public GameObject skipButton;
     VideoPlayer videoPlayer;
     float controlTime;
 
@@ -17,7 +17,7 @@ public class AnimationControl : MonoBehaviour
     {
         videoPlayer = myAnimation.GetComponent<VideoPlayer>();
 
-        // skipButton.GetComponent<Button>().onClick.AddListener(startGame);
+        // skipButton.transform.GetComponent<Button>().onClick.AddListener(startGame);
         
         String sceneName = SceneManager.GetActiveScene().name;
 

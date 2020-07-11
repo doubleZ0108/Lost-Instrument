@@ -15,13 +15,14 @@
 		F1CBA7382494F577000E2302 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1CBA7362494F577000E2302 /* LaunchScreen.storyboard */; };
 		F1CBA7402494FAB0000E2302 /* ViewControllerARSCN.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CBA73F2494FAB0000E2302 /* ViewControllerARSCN.swift */; };
 		F1CBA770249503D8000E2302 /* FocusSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CBA76F249503D8000E2302 /* FocusSquare.swift */; };
-		F1CBA77224950C98000E2302 /* ViewControllerObjectAddition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CBA77124950C98000E2302 /* ViewControllerObjectAddition.swift */; };
+		F1CBA77224950C98000E2302 /* VIewControllerObjectAddition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CBA77124950C98000E2302 /* VIewControllerObjectAddition.swift */; };
+		F1F4C8B724B7426600987682 /* ViewControllerTouchEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4C8B624B7426600987682 /* ViewControllerTouchEvent.swift */; };
+		F1F4C8B924B75D8200987682 /* InstrumentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F4C8B824B75D8200987682 /* InstrumentModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EC0EE9722495256D001B600A /* eh.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; name = eh.dae; path = ../../../../../Desktop/art.scnassets/eh.dae; sourceTree = "<group>"; };
 		EC0EE97824953612001B600A /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		F1CBA7282494F575000E2302 /* Lost-Instrument-ARKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lost-Instrument-ARKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1CBA7282494F575000E2302 /* 遗音AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "遗音AR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1CBA72B2494F575000E2302 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1CBA72F2494F575000E2302 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F1CBA7322494F575000E2302 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -30,7 +31,9 @@
 		F1CBA7392494F577000E2302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1CBA73F2494FAB0000E2302 /* ViewControllerARSCN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerARSCN.swift; sourceTree = "<group>"; };
 		F1CBA76F249503D8000E2302 /* FocusSquare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusSquare.swift; sourceTree = "<group>"; };
-		F1CBA77124950C98000E2302 /* ViewControllerObjectAddition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerObjectAddition.swift; sourceTree = "<group>"; };
+		F1CBA77124950C98000E2302 /* VIewControllerObjectAddition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIewControllerObjectAddition.swift; sourceTree = "<group>"; };
+		F1F4C8B624B7426600987682 /* ViewControllerTouchEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTouchEvent.swift; sourceTree = "<group>"; };
+		F1F4C8B824B75D8200987682 /* InstrumentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstrumentModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +58,7 @@
 		F1CBA7292494F575000E2302 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F1CBA7282494F575000E2302 /* Lost-Instrument-ARKit.app */,
+				F1CBA7282494F575000E2302 /* 遗音AR.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,19 +66,36 @@
 		F1CBA72A2494F575000E2302 /* Lost-Instrument-ARKit */ = {
 			isa = PBXGroup;
 			children = (
-				EC0EE9722495256D001B600A /* eh.dae */,
+				EC0EE97824953612001B600A /* art.scnassets */,
 				F1CBA72B2494F575000E2302 /* AppDelegate.swift */,
 				F1CBA72F2494F575000E2302 /* ViewController.swift */,
-				F1CBA77124950C98000E2302 /* ViewControllerObjectAddition.swift */,
-				EC0EE97824953612001B600A /* art.scnassets */,
+				F1CBA77124950C98000E2302 /* VIewControllerObjectAddition.swift */,
 				F1CBA73F2494FAB0000E2302 /* ViewControllerARSCN.swift */,
-				F1CBA76F249503D8000E2302 /* FocusSquare.swift */,
+				F1F4C8B624B7426600987682 /* ViewControllerTouchEvent.swift */,
+				F1F4C8BA24B75D8900987682 /* DataModel */,
+				F1F4C8B524B73DEF00987682 /* Functional */,
 				F1CBA7312494F575000E2302 /* Main.storyboard */,
 				F1CBA7342494F577000E2302 /* Assets.xcassets */,
 				F1CBA7362494F577000E2302 /* LaunchScreen.storyboard */,
 				F1CBA7392494F577000E2302 /* Info.plist */,
 			);
 			path = "Lost-Instrument-ARKit";
+			sourceTree = "<group>";
+		};
+		F1F4C8B524B73DEF00987682 /* Functional */ = {
+			isa = PBXGroup;
+			children = (
+				F1CBA76F249503D8000E2302 /* FocusSquare.swift */,
+			);
+			path = Functional;
+			sourceTree = "<group>";
+		};
+		F1F4C8BA24B75D8900987682 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				F1F4C8B824B75D8200987682 /* InstrumentModel.swift */,
+			);
+			path = DataModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,7 +115,7 @@
 			);
 			name = "Lost-Instrument-ARKit";
 			productName = "Lost-Instrument-ARKit";
-			productReference = F1CBA7282494F575000E2302 /* Lost-Instrument-ARKit.app */;
+			productReference = F1CBA7282494F575000E2302 /* 遗音AR.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -151,10 +171,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1CBA7302494F575000E2302 /* ViewController.swift in Sources */,
-				F1CBA77224950C98000E2302 /* ViewControllerObjectAddition.swift in Sources */,
+				F1CBA77224950C98000E2302 /* VIewControllerObjectAddition.swift in Sources */,
 				F1CBA770249503D8000E2302 /* FocusSquare.swift in Sources */,
 				F1CBA72C2494F575000E2302 /* AppDelegate.swift in Sources */,
+				F1F4C8B924B75D8200987682 /* InstrumentModel.swift in Sources */,
 				F1CBA7402494FAB0000E2302 /* ViewControllerARSCN.swift in Sources */,
+				F1F4C8B724B7426600987682 /* ViewControllerTouchEvent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,8 +327,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "site.doublez.lost-instrument";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = site.doublez.liar;
+				PRODUCT_NAME = "遗音AR";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -323,8 +345,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "site.doublez.lost-instrument";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = site.doublez.liar;
+				PRODUCT_NAME = "遗音AR";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
