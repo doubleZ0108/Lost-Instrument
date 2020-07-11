@@ -29,6 +29,13 @@ public class ModelMovementTouch : MonoBehaviour
     private float rotateUpDown;
     private float rotateLeftRight;
 
+
+    private float touchTime;
+    private bool newTouch = false;
+    //public Text text;
+
+    public bool canApart = false;
+
     void Update()
     {
         if (isWatching)
@@ -100,10 +107,81 @@ public class ModelMovementTouch : MonoBehaviour
                 //rotateLeftRight += fMouseY * speed;
                 
                 rotateBack += Vector3.up * (-fMouseX) * speed + Vector3.right * fMouseY * speed;
-                Debug.Log("========_mouseDown:rotateBack:" + rotateBack.x.ToString() + ";" + rotateBack.y.ToString() + ";" + rotateBack.z.ToString());
+                //Debug.Log("========_mouseDown:rotateBack:" + rotateBack.x.ToString() + ";" + rotateBack.y.ToString() + ";" + rotateBack.z.ToString());
+
+
+                // 双击 && 长按
+                //从相机发出一条射线
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                RaycastHit hitInfo;
+                if (Physics.Raycast(ray, out hitInfo))
+                {
+                    //if (hitInfo.collider.gameObject.name == "AiXi(Clone)")
+                    //{
+                    //    if (Input.GetMouseButtonDown(0))
+                    //    {
+                    //        newTouch = true;
+                    //        touchTime = Time.time;
+                    //        Debug.Log(newTouch);
+                    //    }
+                    //     if(Input.GetMouseButtonUp(0))
+                    //    {
+                    //        newTouch = false;
+                    //        Debug.Log(newTouch);
+                    //    }
+                    //}
+
+                    if (hitInfo.collider.gameObject.name == "ErHuBox")
+                    {
+                        //Debug.Log("双击or长按");
+                        //双击模型使模型销毁
+                        if (Input.touchCount == 1 && Input.GetTouch(0).phase == TouchPhase.Began)//几个手指碰到屏幕&&刚点击屏幕
+                        {
+                            if (Input.GetTouch(0).tapCount == 2)
+                            {
+                                //Destroy(hitInfo.collider.gameObject);
+                                //Debug.Log("双击");
+                                GameObject.Find("Main Camera").GetComponent<DemoScript>().GoFade();
+                                canApart = false;
+                            }
+
+                        }
+                        //长按
+                        Debug.Log("Input.touchCount="+ Input.touchCount);
+                        if (Input.touchCount == 1)
+                        {
+                            //Debug.Log("长按=");
+                            Touch touch = Input.GetTouch(0);
+                            if (touch.phase == TouchPhase.Began)
+                            {
+                                newTouch = true;
+                                touchTime = Time.time;
+                            }
+                            else if (touch.phase == TouchPhase.Stationary)//手指触摸屏幕但没有移动
+                            {
+                                if (newTouch == true && Time.time - touchTime > 1f)
+                                {
+                                    newTouch = false;
+                                    //Destroy(hitInfo.collider.gameObject);
+                                    //Debug.Log("长按");
+                                    GameObject.Find("ApartButton").GetComponent<ClickApartButton>().ButtonOnClick();
+                                    canApart = false;
+                                }
+                            }
+                            else
+                            {
+                                newTouch = false;
+                            }
+                        }
+                    }
+
+
+                }
             }
 
         }
+
+
 
         if (exitWatching)
         {
@@ -150,4 +228,9 @@ public class ModelMovementTouch : MonoBehaviour
         //Debug.Log("ori_x:" + ori_x.ToString());
     }
 
+
+    public void startApartMode(bool mode)
+    {
+        canApart = mode;
+    }
 }

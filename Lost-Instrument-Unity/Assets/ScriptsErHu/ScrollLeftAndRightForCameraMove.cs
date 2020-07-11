@@ -51,6 +51,8 @@ public class ScrollLeftAndRightForCameraMove : MonoBehaviour
     //public Vector3 rotateAxisNow;
     //private float angle;
 
+    public bool canScroll = true;
+
 
     // Start is called before the first frame update
     void Start()
@@ -76,87 +78,92 @@ public class ScrollLeftAndRightForCameraMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (canScroll)
         {
-
-            if (fingerTouchState == FINGER_STATE_NULL)
+            if (Input.GetKeyDown(KeyCode.Mouse0))
             {
-                fingerTouchState = FINGER_STATE_TOUCH;
-                fingerBeginX = Input.mousePosition.x;
-                fingerBeginY = Input.mousePosition.y;
+
+                if (fingerTouchState == FINGER_STATE_NULL)
+                {
+                    fingerTouchState = FINGER_STATE_TOUCH;
+                    fingerBeginX = Input.mousePosition.x;
+                    fingerBeginY = Input.mousePosition.y;
+                }
+
             }
 
-        }
-
-        if (fingerTouchState == FINGER_STATE_TOUCH)
-        {
-            fingerCurrentX = Input.mousePosition.x;
-            fingerCurrentY = Input.mousePosition.y;
-            fingerSegmentX = fingerCurrentX - fingerBeginX;
-            fingerSegmentY = fingerCurrentY - fingerBeginY;
-
-        }
-
-
-        if (fingerTouchState == FINGER_STATE_TOUCH)
-        {
-            float fingerDistance = fingerSegmentX * fingerSegmentX + fingerSegmentY * fingerSegmentY;
-
-            if (fingerDistance > (fingerActionSensitivity * fingerActionSensitivity))
+            if (fingerTouchState == FINGER_STATE_TOUCH)
             {
-                toAddFingerAction();
+                fingerCurrentX = Input.mousePosition.x;
+                fingerCurrentY = Input.mousePosition.y;
+                fingerSegmentX = fingerCurrentX - fingerBeginX;
+                fingerSegmentY = fingerCurrentY - fingerBeginY;
+
             }
-        }
-
-        if (Input.GetKeyUp(KeyCode.Mouse0))
-        {
-            fingerTouchState = FINGER_STATE_NULL;
-        }
 
 
+            if (fingerTouchState == FINGER_STATE_TOUCH)
+            {
+                float fingerDistance = fingerSegmentX * fingerSegmentX + fingerSegmentY * fingerSegmentY;
 
-        // move function
-        if (startMoveCamera)
-        {
-            //if (moveBack)
-            //{
+                if (fingerDistance > (fingerActionSensitivity * fingerActionSensitivity))
+                {
+                    toAddFingerAction();
+                }
+            }
+
+            if (Input.GetKeyUp(KeyCode.Mouse0))
+            {
+                fingerTouchState = FINGER_STATE_NULL;
+            }
+
+
+
+            // move function
+            if (startMoveCamera)
+            {
+                //if (moveBack)
+                //{
                 //Vector3 aimPosition = aimPositions[tmpIndex-1];
-            float distCovered = (Time.time - startTime) * journeyLength / time;
-            //float fractionOfJourneyBack = distCovered / journeyLengthBack;
-            Debug.Log("journeyLength:" + journeyLength);
-            transform.position = Vector3.Lerp(aimPositionLast, aimPositionNow, distCovered);
-            if (Vector3.Distance(aimPositionNow, transform.position) < 0.001f)
-            {
-                //startTime = Time.time;
-                transform.position = aimPositionNow;
-                //moveBack = false;
+                float distCovered = (Time.time - startTime) * journeyLength / time;
+                //float fractionOfJourneyBack = distCovered / journeyLengthBack;
+                Debug.Log("journeyLength:" + journeyLength);
+                transform.position = Vector3.Lerp(aimPositionLast, aimPositionNow, distCovered);
+                if (Vector3.Distance(aimPositionNow, transform.position) < 0.001f)
+                {
+                    //startTime = Time.time;
+                    transform.position = aimPositionNow;
+                    //moveBack = false;
+                }
+                //}
+                //else
+                //{
+                //    //Vector3 aimPosition = aimPositions[tmpIndex];
+                //    float distCovered = (Time.time - startTime) * journeyLengthFront / time;
+                //    //float fractionOfJourneyFront = distCovered / journeyLengthFront;
+                //    transform.position = Vector3.Lerp(originalPos, aimPositionNow, distCovered);
+                //    if (transform.position == aimPositionNow)
+                //    {
+                //        startMoveCamera = false;
+                //        //startRotateCamera = true;
+                //    }
+                //}
             }
-            //}
-            //else
+
+            //if (startRotateCamera)
             //{
-            //    //Vector3 aimPosition = aimPositions[tmpIndex];
-            //    float distCovered = (Time.time - startTime) * journeyLengthFront / time;
-            //    //float fractionOfJourneyFront = distCovered / journeyLengthFront;
-            //    transform.position = Vector3.Lerp(originalPos, aimPositionNow, distCovered);
-            //    if (transform.position == aimPositionNow)
+            //    transform.RotateAround(centerPosition, rotateAxisNow, rotateAngleNow / time * Time.deltaTime);
+            //    angle += rotateAngleNow / time * Time.deltaTime;
+            //    if ((angle >= rotateAngleNow && rotateAngleNow >= 0) || (angle <= rotateAngleNow && rotateAngleNow < 0))
             //    {
-            //        startMoveCamera = false;
-            //        //startRotateCamera = true;
+            //        transform.RotateAround(centerPosition, rotateAxisNow, rotateAngleNow - angle);
+            //        startRotateCamera = false;
+
             //    }
             //}
         }
 
-        //if (startRotateCamera)
-        //{
-        //    transform.RotateAround(centerPosition, rotateAxisNow, rotateAngleNow / time * Time.deltaTime);
-        //    angle += rotateAngleNow / time * Time.deltaTime;
-        //    if ((angle >= rotateAngleNow && rotateAngleNow >= 0) || (angle <= rotateAngleNow && rotateAngleNow < 0))
-        //    {
-        //        transform.RotateAround(centerPosition, rotateAxisNow, rotateAngleNow - angle);
-        //        startRotateCamera = false;
 
-        //    }
-        //}
 
     }
 
@@ -242,5 +249,11 @@ public class ScrollLeftAndRightForCameraMove : MonoBehaviour
         //    this.GetComponent<FollowTarget>().startMove(tmpIndex);
         //}
 
+    }
+
+
+    public void changeCanScroll()
+    {
+        canScroll = !canScroll;
     }
 }

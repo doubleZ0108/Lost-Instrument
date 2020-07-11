@@ -64,7 +64,14 @@ public class ScrollLeftAndRightForRotate : MonoBehaviour
             //Debug.Log("targetRotation" + targetRotation);
             rotate = true;
         }
-        
-       
+
+        if (index == 0)
+        {
+            GameObject.Find("UpButton").GetComponent<UpButtonClick>().showAndHide(true);
+        }
+        else
+        {
+            GameObject.Find("UpButton").GetComponent<UpButtonClick>().showAndHide(false);
+        }
     }
 }

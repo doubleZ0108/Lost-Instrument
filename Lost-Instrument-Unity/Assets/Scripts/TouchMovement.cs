@@ -209,8 +209,8 @@ public class TouchMovement : MonoBehaviour
 
         GameObject aimOne = (GameObject)objects[position];
         aimOne.GetComponent<ModelMovementTouch>().ExitWatching();
-        
 
+        aimOne.GetComponent<ModelMovementTouch>().startApartMode(false);
     }
     public void ExitWatchingMove()
     {
@@ -230,6 +230,8 @@ public class TouchMovement : MonoBehaviour
 
         this.GetComponent<WatchMoveCamera>().moving(Vector3.back);
         GameObject.Find("ShowingRotate").GetComponent<ClickInstru>().ExitWatching();
+
+        this.GetComponent<CameraMove>().startWatchMode(false);
     }
 
 
@@ -243,6 +245,7 @@ public class TouchMovement : MonoBehaviour
         GameObject aimOne = (GameObject)objects[position];
         aimOne.GetComponent<WatchMove>().rotate();
 
+        aimOne.GetComponent<ModelMovementTouch>().startApartMode(true);
         
     }
 
@@ -266,6 +269,8 @@ public class TouchMovement : MonoBehaviour
         GameObject aimOne = (GameObject)objects[position];
         aimOne.GetComponent<ModelMovementTouch>().EnterWatching();
         this.GetComponent<WatchMoveCamera>().moving(Vector3.forward);
+
+        this.GetComponent<CameraMove>().startWatchMode(true);
     }
 
 
@@ -281,8 +286,8 @@ public class TouchMovement : MonoBehaviour
         backButton.GetComponent<CanvasGroup>().alpha = show? 1 : 0;
         backButton.GetComponent<CanvasGroup>().interactable = show;
         backButton.GetComponent<CanvasGroup>().blocksRaycasts = show;
-        apartButton.GetComponent<CanvasGroup>().alpha = show ? 1 : 0;
-        apartButton.GetComponent<CanvasGroup>().interactable = show;
-        apartButton.GetComponent<CanvasGroup>().blocksRaycasts = show;
+        //apartButton.GetComponent<CanvasGroup>().alpha = show ? 1 : 0;
+        //apartButton.GetComponent<CanvasGroup>().interactable = show;
+        //apartButton.GetComponent<CanvasGroup>().blocksRaycasts = show;
     }
 }

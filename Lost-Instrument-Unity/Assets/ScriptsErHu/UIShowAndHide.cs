@@ -12,6 +12,7 @@ public class UIShowAndHide : MonoBehaviour
 	void Start()
 	{
 		cg = this.transform.GetComponent<CanvasGroup>();
+		cg.alpha = 0f;
 	}
 
 	void Update()

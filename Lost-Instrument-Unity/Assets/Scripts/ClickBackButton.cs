@@ -22,6 +22,6 @@ public class ClickBackButton : MonoBehaviour
     {
         //GameObject.Find("ApartButton").GetComponent<ClickApartButton>().backApart();
         GameObject.Find("Main Camera").GetComponent<TouchMovement>().ExitWatching();
-        
+        GameObject.Find("Main Camera").GetComponent<CameraMove>().startBack();
     }
 }
