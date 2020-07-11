@@ -100,16 +100,19 @@ public class ModelMovementTouch : MonoBehaviour
 
             if (_mouseDown)
             {
-                float fMouseX = Input.GetAxis("Mouse X");
-                float fMouseY = Input.GetAxis("Mouse Y");
-                transform.Rotate(Vector3.up, -fMouseX * speed * friction, Space.World);
-                transform.Rotate(Vector3.right, fMouseY * speed * friction, Space.World);
-                //rotateUpDown += -fMouseX * speed;
-                //rotateLeftRight += fMouseY * speed;
-                
-                rotateBack += Vector3.up * (-fMouseX) * speed * friction + Vector3.right * fMouseY * speed * friction;
-                //Debug.Log("========_mouseDown:rotateBack:" + rotateBack.x.ToString() + ";" + rotateBack.y.ToString() + ";" + rotateBack.z.ToString());
+                if (Input.GetTouch(0).phase == TouchPhase.Moved){
+                    float fMouseX = Input.GetAxis("Mouse X");
+                    float fMouseY = Input.GetAxis("Mouse Y");
+                    transform.Rotate(Vector3.up, -fMouseX * speed * friction, Space.World);
+                    transform.Rotate(Vector3.right, fMouseY * speed * friction, Space.World);
+                    //rotateUpDown += -fMouseX * speed;
+                    //rotateLeftRight += fMouseY * speed;
+                    
+                    rotateBack += Vector3.up * (-fMouseX) * speed * friction + Vector3.right * fMouseY * speed * friction;
+                    //Debug.Log("========_mouseDown:rotateBack:" + rotateBack.x.ToString() + ";" + rotateBack.y.ToString() + ";" + rotateBack.z.ToString());
 
+                }
+                
 
                 // 双击 && 长按
                 //从相机发出一条射线

@@ -6379,6 +6379,7 @@ MonoBehaviour:
   exitWatching: 0
   aim: {fileID: 0}
   speed: 6
+  friction: 0.3
   canApart: 0
 --- !u!1 &922492281 stripped
 GameObject:
@@ -6507,6 +6508,7 @@ MonoBehaviour:
   exitWatching: 1
   aim: {fileID: 0}
   speed: 6
+  friction: 0.3
   canApart: 0
 --- !u!114 &963194231
 MonoBehaviour:
@@ -6576,7 +6578,7 @@ MonoBehaviour:
   distance: 0
   scaleFactor: 1
   maxDistance: 10
-  minDistance: 1
+  minDistance: -3
   useMouse: 0
   xMin: -100
   xMax: 100
@@ -12523,6 +12525,7 @@ MonoBehaviour:
   exitWatching: 0
   aim: {fileID: 0}
   speed: 6
+  friction: 0.3
   canApart: 0
 --- !u!1 &1590239693 stripped
 GameObject:
@@ -13164,6 +13167,7 @@ MonoBehaviour:
   exitWatching: 0
   aim: {fileID: 0}
   speed: 6
+  friction: 0.3
   canApart: 0
 --- !u!4 &1917199570 stripped
 Transform:
@@ -13613,6 +13617,7 @@ MonoBehaviour:
   exitWatching: 0
   aim: {fileID: 0}
   speed: 6
+  friction: 0.3
   canApart: 0
 --- !u!1 &2066056041
 GameObject:
