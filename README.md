@@ -2,7 +2,11 @@
 
 重新发现民乐
 
-[toc]
+* [背景介绍](#背景介绍)
+* [项目截图](#项目截图)
+* [项目结构](#项目结构)
+* [相关荣誉](#相关荣誉)
+* [关于作者](#关于作者)
 
 ------
 
@@ -28,26 +32,28 @@
 
 ## 项目结构
 
-- src
-  - [Lost-Instrument-ARKit](https://github.com/doubleZ0108/Lost-Instrument/tree/master/Lost-Instrument-ARKit)
-  - [Lost-Instrument-Unity](https://github.com/doubleZ0108/Lost-Instrument/tree/master/Lost-Instrument-Unity)
-- model
-  - 二胡
-  - 古筝
-  - 琵琶
-  - 扬琴
-- doc
-  - 《遗音》需求规约
-  - 《遗音》介绍文档
-  - 《遗音》实现文档
-  - 《遗音》乐器介绍
-  - 《遗音》项目申请表
-- pre
-  - 《遗音》介绍演示文稿
-  - 《遗音》实现演示文稿
-  - 《遗音》海报
-- video
-  - 
+- `src`
+  - ⚗️[Lost-Instrument-ARKit](https://github.com/doubleZ0108/Lost-Instrument/tree/master/Lost-Instrument-ARKit)
+  - ⚗️[Lost-Instrument-Unity](https://github.com/doubleZ0108/Lost-Instrument/tree/master/Lost-Instrument-Unity)
+- `model`
+  - [二胡](https://github.com/doubleZ0108/Lost-Instrument/tree/master/model/二胡)
+  - [古筝](https://github.com/doubleZ0108/Lost-Instrument/tree/master/model/古筝)
+  - [琵琶](https://github.com/doubleZ0108/Lost-Instrument/tree/master/model/琵琶)
+  - [扬琴](https://github.com/doubleZ0108/Lost-Instrument/tree/master/model/扬琴)
+- `doc`
+  - 📄[《遗音》需求规约](https://github.com/doubleZ0108/Lost-Instrument/blob/master/doc/《遗音》需求规约.pdf)
+  - 📄[《遗音》介绍文档](https://github.com/doubleZ0108/Lost-Instrument/blob/master/doc/《遗音》介绍文档.pdf)
+  - 📄[《遗音》实现文档](https://github.com/doubleZ0108/Lost-Instrument/blob/master/doc/《遗音》实现文档.pdf)
+  - 📄[《遗音》乐器介绍](https://github.com/doubleZ0108/Lost-Instrument/blob/master/doc/《遗音》乐器介绍.pdf)
+  - 📄[《遗音》项目申请表](https://github.com/doubleZ0108/Lost-Instrument/blob/master/doc/《遗音》项目申请表.pdf)
+- `pre`
+  - 🎙[《遗音》介绍演示文稿](https://github.com/doubleZ0108/Lost-Instrument/blob/master/pre/《遗音》介绍演示文稿.pdf)
+  - 🎙[《遗音》实现演示文稿](https://github.com/doubleZ0108/Lost-Instrument/blob/master/pre/《遗音》实现演示文稿.pdf)
+  - 🎨[《遗音》海报](https://github.com/doubleZ0108/Lost-Instrument/blob/master/pre/海报.png)
+- `video`
+  - 🎬[开屏视频](https://pan.baidu.com/s/1nKDfkO9koRA0xMxYc0hOUQ)：密码:6v5f
+  - 🎬[《遗音》ARKit demo视频](https://pan.baidu.com/s/13jJ6BIDEGW8LOh3DRlIivg)：密码:3bc6
+  - 🎬[《遗音》Unity demo视频](https://pan.baidu.com/s/1co5H_--cKTrZ-Z1IErkFBw):  密码:5ewq
 
 <br/>
 
