@@ -1,4 +1,4 @@
-# <img src="logo.png" alt="logo" width="10%;" />遗音
+# <img src="https://upload-images.jianshu.io/upload_images/12014150-ee78b24d005f4b5f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="logo" width="10%;" />遗音
 
 重新发现民乐
 
@@ -22,11 +22,11 @@
 
 ## 项目截图
 
-<img src="README.assets/IMG_3747.PNG" alt="IMG_3747" width="25%;" align="center"/>
+<img src="https://upload-images.jianshu.io/upload_images/12014150-2b03d6d32f0c34f7.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="IMG_3747" width="25%;" align="center"/>
 
-![image-20200712122945419](README.assets/image-20200712122945419.png)
+![image-20200712122945419](https://upload-images.jianshu.io/upload_images/12014150-106a4a738713ef35.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-![image-20200712123250650](README.assets/image-20200712123250650.png)
+![image-20200712123250650](https://upload-images.jianshu.io/upload_images/12014150-cab218e2f71083ab.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 <br/>
 
@@ -64,7 +64,7 @@
 - [x] 2019年同济大学国家级大学生创新创业项目
 - [x] 同思双创-2019年同济大学本科生优秀国创及上创项目沙龙展示优秀项目
 
-![image-20200822231406204](README.assets/image-20200822231406204.png)
+![image-20200822231406204](https://upload-images.jianshu.io/upload_images/12014150-d0682f0c71580593.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 <br/>
 
