@@ -22,7 +22,7 @@
 
 ## 项目截图
 
-<img src="https://upload-images.jianshu.io/upload_images/12014150-2b03d6d32f0c34f7.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="IMG_3747" width="25%;" align="center"/>
+<div align="center"><img src="https://upload-images.jianshu.io/upload_images/12014150-2b03d6d32f0c34f7.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="IMG_3747" width="25%;" align="center"/></div>
 
 ![image-20200712122945419](https://upload-images.jianshu.io/upload_images/12014150-106a4a738713ef35.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
@@ -59,12 +59,12 @@
 
 ## 相关荣誉
 
-- [x] 移动应用创新赛初赛晋级
+- [x] 2020移动应用创新赛华东赛区三等奖
 - [x] 第四届同济大学大学生创新创业论坛二等奖
 - [x] 2019年同济大学国家级大学生创新创业项目
 - [x] 同思双创-2019年同济大学本科生优秀国创及上创项目沙龙展示优秀项目
 
-![image-20200822231406204](https://upload-images.jianshu.io/upload_images/12014150-d0682f0c71580593.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+<img src="https://upload-images.jianshu.io/upload_images/12014150-a4369c165188a02e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="award-new.png" width="70%;" />
 
 <br/>
 
