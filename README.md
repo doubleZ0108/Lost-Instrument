@@ -24,9 +24,9 @@
 
 <div align="center"><img src="https://upload-images.jianshu.io/upload_images/12014150-2b03d6d32f0c34f7.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="IMG_3747" width="25%;" align="center"/></div>
 
-![image-20200712122945419](https://upload-images.jianshu.io/upload_images/12014150-106a4a738713ef35.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+<div align="center"><img src="https://upload-images.jianshu.io/upload_images/12014150-106a4a738713ef35.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image-20200712122945419" width="100%;" /></div>
 
-![image-20200712123250650](https://upload-images.jianshu.io/upload_images/12014150-cab218e2f71083ab.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+<div align="center"><img src="https://upload-images.jianshu.io/upload_images/12014150-cab218e2f71083ab.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image-20200712123250650" width="80%;" /></div>
 
 <br/>
 
@@ -64,7 +64,7 @@
 - [x] 2019年同济大学国家级大学生创新创业项目
 - [x] 同思双创-2019年同济大学本科生优秀国创及上创项目沙龙展示优秀项目
 
-<img src="https://upload-images.jianshu.io/upload_images/12014150-a4369c165188a02e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="award-new.png" width="70%;" />
+<div align="center"><img src="https://upload-images.jianshu.io/upload_images/12014150-a4369c165188a02e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="award-new.png" width="65%;"/></div>
 
 <br/>
 
