@@ -327,7 +327,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = site.doublez.liar;
+				PRODUCT_BUNDLE_IDENTIFIER = "site.doublez.lost-instrument-arkit";
 				PRODUCT_NAME = "遗音AR";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -345,7 +345,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = site.doublez.liar;
+				PRODUCT_BUNDLE_IDENTIFIER = "site.doublez.lost-instrument-arkit";
 				PRODUCT_NAME = "遗音AR";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
