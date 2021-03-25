@@ -47,6 +47,7 @@
   - 📄[《遗音》乐器介绍](https://github.com/doubleZ0108/Lost-Instrument/blob/master/doc/《遗音》乐器介绍.pdf)
   - 📄[《遗音》项目申请表](https://github.com/doubleZ0108/Lost-Instrument/blob/master/doc/《遗音》项目申请表.pdf)
 - `pre`
+  - ✨[《遗音》展示](https://github.com/doubleZ0108/Lost-Instrument/blob/master/pre/《遗音》展示.pdf)
   - 🎙[《遗音》介绍演示文稿](https://github.com/doubleZ0108/Lost-Instrument/blob/master/pre/《遗音》介绍演示文稿.pdf)
   - 🎙[《遗音》实现演示文稿](https://github.com/doubleZ0108/Lost-Instrument/blob/master/pre/《遗音》实现演示文稿.pdf)
   - 🎨[《遗音》海报](https://github.com/doubleZ0108/Lost-Instrument/blob/master/pre/海报.png)
