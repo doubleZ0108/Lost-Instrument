@@ -1,6 +1,14 @@
 # <img src="https://upload-images.jianshu.io/upload_images/12014150-ee78b24d005f4b5f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="logo" width="10%;" />Lost Instrument
 
+[中文(zh-cn)](https://github.com/doubleZ0108/Lost-Instrument/blob/master/README.md) | [English(en)](https://github.com/doubleZ0108/Lost-Instrument/blob/master/README_en.md)
+
 Rediscover Chinese Fork Music
+
+* [Background](#background)
+* [App Snapshots](#app-snapshots)
+* [Project Structure](#project-structure)
+* [Awards](#awards)
+* [About the Author](#about-the-author)
 
 ------
 

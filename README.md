@@ -1,5 +1,9 @@
 # <img src="https://upload-images.jianshu.io/upload_images/12014150-ee78b24d005f4b5f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="logo" width="10%;" />遗音
 
+[中文(zh-cn)](https://github.com/doubleZ0108/Lost-Instrument/blob/master/README.md) | [English(en)](https://github.com/doubleZ0108/Lost-Instrument/blob/master/README_en.md)
+
+
+
 重新发现民乐
 
 * [背景介绍](#背景介绍)
