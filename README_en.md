@@ -2,7 +2,7 @@
 
 [中文(zh-cn)](https://github.com/doubleZ0108/Lost-Instrument/blob/master/README.md) | [English(en)](https://github.com/doubleZ0108/Lost-Instrument/blob/master/README_en.md)
 
-Rediscover Chinese Fork Music
+> Rediscover Chinese Fork Music
 
 * [Background](#background)
 * [App Snapshots](#app-snapshots)
@@ -61,12 +61,13 @@ It is not only the feelings of folk music lovers, but also the mission of our yo
 
 ## Awards
 
-- [ ] China Collegiate Computing Contest Mobile App Innovation Competition(CCCC) 2020, ***3rd*** prize of East China Competition Area
-- [x] Tongji Univ. Students' Innovation and Entrepreneurship Forum, ***2nd***
+- [x] China Collegiate Computing Contest Mobile App Innovation Competition(CCCC) 2020, ***3rd*** prize of East China Competition Area
+- [x] The 6th "Think Youth" Creative Works Compition of Shanghai, ***3rd*** prize
 - [x] Tongji University ***National Innovation and Entrepreneurship Project*** in 2019
+- [x] Tongji Univ. Students' Innovation and Entrepreneurship Forum, ***2nd***
 - [x] TSSC - Salon of National Ungraduates' Innovation and Entrepreneurship training Program in Tongji Univ., ***Excellent Project***
 
-<div align="center"><img src="https://doublez-site-bed.oss-cn-shanghai.aliyuncs.com/img/20210326105124.png" alt="award-new.png" width="65%;"/></div>
+<div align="center"><img src="https://upload-images.jianshu.io/upload_images/12014150-71e29955f782e110.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="award-new.png" width="65%;"/></div>
 
 <br/>
 
