@@ -4,10 +4,10 @@
 
 
 
-重新发现民乐
+> 重新发现民乐
 
 * [背景介绍](#背景介绍)
-* [项目截图](#项目截图)
+* [App截图](#App截图)
 * [项目结构](#项目结构)
 * [相关荣誉](#相关荣誉)
 * [关于作者](#关于作者)
@@ -65,11 +65,12 @@
 ## 相关荣誉
 
 - [x] 2020移动应用创新赛华东赛区三等奖
-- [x] 第五届同济大学大学生创新创业论坛二等奖
+- [x] 第六届“汇创青春”上海大学生文化创意作品比赛三等奖
 - [x] 2019年同济大学国家级大学生创新创业项目
+- [x] 第五届同济大学大学生创新创业论坛二等奖
 - [x] 同思双创-2019年同济大学本科生优秀国创及上创项目沙龙展示优秀项目
 
-<div align="center"><img src="https://doublez-site-bed.oss-cn-shanghai.aliyuncs.com/img/20210326105124.png" alt="award-new.png" width="65%;"/></div>
+<div align="center"><img src="https://upload-images.jianshu.io/upload_images/12014150-71e29955f782e110.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="award-new.png" width="65%;"/></div>
 
 <br/>
 
